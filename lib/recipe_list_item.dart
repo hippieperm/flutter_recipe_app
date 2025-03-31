@@ -15,9 +15,9 @@ class RecipeListItem extends StatelessWidget {
     return Column(
       crossAxisAlignment: CrossAxisAlignment.start,
       children: [
-        Image.asset('assets/images/coffee.jpg'),
+        Image.asset(path),
         Text(
-          'Made Coffee',
+          title,
           style: TextStyle(fontSize: 20),
         ),
         Text(
