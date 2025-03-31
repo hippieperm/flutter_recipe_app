@@ -1,10 +1,30 @@
 import 'package:flutter/material.dart';
 
 class RecipeListItem extends StatelessWidget {
-  const RecipeListItem({super.key});
+  final String path;
+  final String title;
+
+  const RecipeListItem({
+    super.key,
+    required this.path,
+    required this.title,
+  });
 
   @override
   Widget build(BuildContext context) {
-    return Text('RecipeListItem');
+    return Column(
+      crossAxisAlignment: CrossAxisAlignment.start,
+      children: [
+        Image.asset('assets/images/coffee.jpg'),
+        Text(
+          'Made Coffee',
+          style: TextStyle(fontSize: 20),
+        ),
+        Text(
+          "Have you ever made your own Coffee? Once you've tried a homemade Coffee, you'll never go back.",
+          style: TextStyle(fontSize: 12),
+        )
+      ],
+    );
   }
 }
