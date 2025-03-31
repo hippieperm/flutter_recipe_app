@@ -5,6 +5,6 @@ class RecipeMenu extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Text('RecipeTitle');
+    return Text('RecipeMenu');
   }
 }
