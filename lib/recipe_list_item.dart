@@ -27,10 +27,10 @@ class RecipeListItem extends StatelessWidget {
               ),
             ),
           ),
-          SizedBox(height: 4),
+          const SizedBox(height: 4),
           Text(
             title,
-            style: TextStyle(fontSize: 20),
+            style: const TextStyle(fontSize: 20),
           ),
           Text(
             "Have you ever made your own $title? Once you've tried a homemade Coffee, you'll never go back.",

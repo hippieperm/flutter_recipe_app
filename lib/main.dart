@@ -16,7 +16,7 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       theme: ThemeData(fontFamily: 'NotoSansKR'),
-      home: RecipePage(),
+      home: const RecipePage(),
     );
   }
 }
@@ -29,34 +29,34 @@ class RecipePage extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         actions: [
-          Icon(
+          const Icon(
             CupertinoIcons.search,
             size: 30,
           ),
-          SizedBox(width: 15),
-          Icon(
+          const SizedBox(width: 15),
+          const Icon(
             CupertinoIcons.heart,
             size: 30,
             color: Colors.red,
           ),
-          SizedBox(width: 15),
+          const SizedBox(width: 15),
         ],
       ),
       body: Padding(
-        padding: EdgeInsets.symmetric(horizontal: 20),
+        padding: const EdgeInsets.symmetric(horizontal: 20),
         child: ListView(
           children: [
-            RecipeTitle(),
-            RecipeMenu(),
-            RecipeListItem(
+            const RecipeTitle(),
+            const RecipeMenu(),
+            const RecipeListItem(
               path: 'assets/images/coffee.jpg',
               title: 'Made Coffee',
             ),
-            RecipeListItem(
+            const RecipeListItem(
               path: 'assets/images/burger.jpg',
               title: 'Made Bugger',
             ),
-            RecipeListItem(
+            const RecipeListItem(
               path: 'assets/images/pizza.jpg',
               title: 'Made Pizza',
             ),
