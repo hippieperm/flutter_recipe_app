@@ -27,13 +27,17 @@ class RecipeListItem extends StatelessWidget {
               ),
             ),
           ),
+          SizedBox(height: 4),
           Text(
             title,
             style: TextStyle(fontSize: 20),
           ),
           Text(
             "Have you ever made your own $title? Once you've tried a homemade Coffee, you'll never go back.",
-            style: TextStyle(fontSize: 12),
+            style: TextStyle(
+              fontSize: 12,
+              color: Colors.black.withOpacity(0.5),
+            ),
           )
         ],
       ),
